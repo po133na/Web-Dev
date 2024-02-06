@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+   <meta content="width=device-width, user-scalable-no, initial-scale-scale = 1.0, maximum-scale = 1.0,-->
+    minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Instagram</title>
+
+
+    <link href="styles.css" rel="stylesheet">
+<style>
+
+
+body{
+    background-color: #fafafa;
+    margin: 0px;
+    font-family: -apple-system;
+    height: 100%;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 10px;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.left-img{
+    height: 700px;
+    width: 430px;
+    transform: scale(0.9);
+}
+
+.right-submit-form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 350px;
+    background-color: white;
+    border: 1px solid rgb(219,219,219);
+    padding: 40px;
+    margin: 20px;
+}
+
+.right-submit-form{
+    padding-bottom:  10px;
+}
+
+.login-btn{
+    background-color: #4bb4f8;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.or-tag{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    column-gap: 18px;
+    align-items: center;
+    font-size: 12px;
+    color: #737373;
+    font-weight: 600;
+}
+.or-tag span:nth-child(3),
+.or-tag span:nth-child(1){
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+
+.social__icon {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.fab {
+  padding: 5px;
+  color: rgb(0, 55, 107);
+}
+.social__icon span {
+  color: rgb(0, 55, 107);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.forgot-password{
+    color: #0aaee1;
+    padding: 10px;
+}
+
+
+.forgot-password a{
+    text-decoration: none;
+    color: #144676;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+    color: #144676;
+}
+
+.noacc{
+    background-color: white;
+    border: 1px  solid rgb(219,219,219);
+    text-align: center;
+    padding: 12px;
+    margin: 20px;
+    
+}
+.input *[placeholder]{
+    color: gray;
+}
+
+#Sign-up{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#Sign-up:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.getapp{
+    text-align: center;
+}
+
+.stores{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.stores .applestore{
+    cursor: pointer;
+}
+.stores .google{
+    cursor: pointer;
+}
+
+footer{
+    height: 10%;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content span{
+    color: gray;
+    padding: 10px;
+    font-size: 12px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.meta{
+    color: gray;
+    margin-top: 20px;
+}
+
+.language select{
+    margin-top: 20px;
+    background-color: transparent;
+    color:gray;
+
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-img">
+            <img alt="screenphone" src="https://media.gcflearnfree.org/content/633d944b3823fb02e84dce55_10_05_2022/Screen%20Shot%202022-10-10%20at%202.28.19%20PM.png">
+        </div>
+        <div class="right">
+            <div class="right-submit-form">
+                <img alt="logo" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-text-icon.png"
+                width="170"
+                height="50">
+                <input placeholder="Phone number, username or email" type="text">
+                <input placeholder="Password" type="password">
+
+                <div class="login-btn">
+                    Log In
+                </div>
+
+                <div class="or-tag">
+                    <span></span>
+                    <span>OR</span>
+                    <span></span>
+                </div>
+
+                <div class="social__icon">
+                    <i class="fab fa-facebook-square" ></i
+                    ><span>Log in with Facebook</span>
+                  </div>
+
+
+                <div class="forgot-password">
+                    <a href="#" id="forgot">Forgot Password?</a>
+                </div>
+
+
+            </div>
+            <div class="noacc">
+                Don't have an account?<span id="Sign-up" style="color: rgba(0,149,246,1)"> Sign up</span>
+            </div>
+
+            <div class="getapp">
+                Get the app.
+            </div>
+            <div class="stores">
+            <div class="applestore">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="Applestore"
+                width="170"
+                height="50">
+                
+            </div>
+
+            <div class="google">
+                <img alt="Googleplay" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"  
+                width="170"
+                height="50">
+            </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-content">
+        <span>Meta</span>
+        <span>About</span>
+        <span>Blog</span>
+        <span>Jobs</span>
+        <span>API</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+        <span>Hashtags</span>
+        <span>Locations</span>
+        <span>Dance</span>
+        <span>Music</span>
+        <span>Top Accounts</span>
+        <span>Help</span>
+        <span>Home</span>
+    </div>
+    <div class="block">
+
+        <div class="language">
+            <select>
+                <option>English</option>
+                <option>Russian</option>
+                <option>Kazakh></option>
+            </select>
+        </div>
+
+        <div class="meta">
+              © 2024 Instagram from Meta
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
