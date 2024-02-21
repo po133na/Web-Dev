@@ -6,12 +6,8 @@
             <div class="characteristics">
                 <h3>{{product.name}}</h3>
                 <h4>Price: {{product.price}} ₸</h4>
-                <p>Color: {{product.color}}</p>
-                <p>Operation System: {{product.Os}}</p>
-                <p *ngIf="product.hasNfc">Has NFC</p>
-                <p>Ram: {{product.ram}} GB</p>
-                <p>Rom: {{product.rom}} GB</p>
-                <p>Camera: {{product.camera}} GB</p>
+                <p>Link: {{product.link}}</p>
+                <p>Description: {{product.description}}</p>
             </div>
             <img src="{{product.imageUrl}}" alt="product photo">
         </div>
