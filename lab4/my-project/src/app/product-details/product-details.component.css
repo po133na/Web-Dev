@@ -1,10 +1,11 @@
 .content {
     margin: 0 auto;
     padding: 0;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .product-details {
@@ -15,7 +16,8 @@
     border: 1px solid gray;
     padding: 3%;
     margin-top: 20px; 
-    margin-left: 400px;
+    margin-left: 50%;
+    flex-wrap: wrap;
 }
 
 .characteristics {
