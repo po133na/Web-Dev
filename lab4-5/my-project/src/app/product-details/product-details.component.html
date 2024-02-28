@@ -1,0 +1,15 @@
+<div class="content">
+    <h2>Product Details</h2>
+
+    <div class="main">
+        <div class="product-details" *ngIf="product">
+            <div class="characteristics">
+                <h3>{{product.name}}</h3>
+                <h4>Price: {{product.price}} ₸</h4>
+                <p>Link: {{product.link}}</p>
+                <p>Description: {{product.description}}</p>
+            </div>
+            <img src="{{product.imageUrl}}" alt="product photo">
+        </div>
+    </div>
+</div>
