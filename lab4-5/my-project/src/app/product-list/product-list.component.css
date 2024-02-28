@@ -14,20 +14,20 @@
   }
   
   .product-container {
-    flex: 0 0 auto;
-    max-width: 200px;
+    flex: auto;
+    max-width: 250px;
     width: 550px;
     margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing:content-box;
     text-align: center;
   }
   
   .product-container img {
-    width: 150px;
+    width: 130px;
     height: 200px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   .product-container h3 {
@@ -53,7 +53,35 @@
   .share-btn:hover {
     background-color: #ff7ab2;
   }
+
+  .like-btn{
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .like-btn:hover {
+    background-color: #ff7ab2;
+  }
   
+  .delete-btn{
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .delete-btn:hover {
+    background-color: #ff7ab2;
+  }
+
   .product-container .product-title {
     font-size: 15px;
   }
