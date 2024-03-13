@@ -1,9 +1,9 @@
-<h1>{{album?.title}} details</h1>
+<h1>{{album?.title}}</h1>
 
 <form>
-    <label>album title:</label>
+    <label>Rename your album below</label>
     <input type="text" name="newTitle" [(ngModel)]="inputValue" placeholder="{{album?.title}}">
-    <button (click)="changeAlbumTitle()">SAVE</button>
+    <button (click)="changeAlbumTitle()">Save the name</button>
 </form>
 
 

@@ -1,21 +1,30 @@
+
 h1 {
+    margin-left: 40px;
     font-size: 24px;
     margin-bottom: 20px;
+    display: flex;
   }
   
   form {
     margin-bottom: 20px;
+    margin-left: 30px;
   }
   
   label {
     display: block;
     margin-bottom: 10px;
+    margin-left: 30px;
+    font-weight: bold;
   }
   
   input[type="text"] {
-    width: 100%;
-    padding: 8px;
+    width: 1000px;
+    padding: 5px;
     margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border: 5px solid pink;
   }
   
   button[type="submit"] {
@@ -24,6 +33,7 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
+    margin-left: 30px;
   }
   
   button[type="submit"]:hover {
@@ -31,12 +41,14 @@ h1 {
   }
   
   button {
-    padding: 8px 16px;
-    background-color: #333;
+    padding: 7px 14px;
+    background-color: #868383;
     color: white;
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
+    margin-left: 60px;
+    border-radius: 7px;
   }
   
   button[routerLink="/albums"]:hover {
@@ -50,9 +62,5 @@ h1 {
     border: none;
     cursor: pointer;
     text-decoration: none;
-  }
-  
-  a[routerLink^="/albums/"]:hover {
-    background-color: #555;
   }
   

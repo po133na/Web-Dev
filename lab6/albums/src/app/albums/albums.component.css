@@ -1,48 +1,49 @@
 fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
+    margin: 40px;
     margin-bottom: 20px;
+    border:  4mm ridge rgba(247, 252, 158, 0.6);
+    background-color: #f0eeee;
   }
   
-  input[type="text"] {
-    width: 200px;
-    padding: 5px;
-    margin-right: 10px;
+  input[type="txt"] {
+    width: 1000px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
   }
   
   button {
     padding: 5px 10px;
-    background-color: #333;
+    background-color: #706d6d;
     color: white;
+    border-radius: 7px;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
   }
   
   ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   li {
-    border: 1px solid #ccc;
+    border: 3px solid #ffbaba;
     padding: 10px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f6f4f4;
   }
   
   a {
     text-decoration: none;
-    color: #333;
-  }
-  
-  a:hover {
-    text-decoration: underline;
+    color: rgb(141, 138, 138);
   }
   
   li button {

@@ -1,11 +1,10 @@
 <fieldset>
-    <input type="text" placeholder="Album title" [(ngModel)]="newAlbum.title">
-    <button (click)="addAlbum()">Add Album</button>
+    <input type="txt" placeholder="Input the name here..." [(ngModel)]="newAlbum.title">
+    <button (click)="addAlbum()">Add</button>
   </fieldset>
   
   <ul>
     <li *ngFor="let album of albums">
-      <!-- <span>{{ album.title }}</span> -->
       <a [title]="album.title + ' details'" [routerLink]="['/albums', album.id]">
         {{album.title}}
     </a>
