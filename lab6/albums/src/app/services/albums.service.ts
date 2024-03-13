@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Album } from '../models/album-model';
-import { AlbumPhoto } from '../models/album-photo-model';
+import { AlbumPhotos } from '../models/album-photos-model';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +30,6 @@ export class AlbumsService {
     return this.httpClient.delete<Album>(`${this.BASE_URL}/albums/${id}`);
   }
   getAlbumPhotos(id: number) {
-    return this.httpClient.get<AlbumPhoto[]>(`${this.BASE_URL}/albums/${id}/photos`);
+    return this.httpClient.get<AlbumPhotos[]>(`${this.BASE_URL}/albums/${id}/photos`);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumPhoto } from '../models/album-photo-model';
+import { AlbumPhotos } from '../models/album-photos-model';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumsService } from '../services/albums.service';
 
@@ -9,7 +9,7 @@ import { AlbumsService } from '../services/albums.service';
   styleUrls: ['./album-photos.component.css']
 })
 export class AlbumPhotosComponent implements OnInit {
-  albumPhotos: AlbumPhoto[];
+  albumPhotos: AlbumPhotos[];
 
   constructor(private route: ActivatedRoute, private albumsService: AlbumsService) {
     this.albumPhotos = [];
