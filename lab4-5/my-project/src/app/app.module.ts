@@ -15,15 +15,15 @@ import { CategoryComponent } from './category/category.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: CategoryComponent },
-      { path: 'categories/:categoryId', component: ListComponent },
-      { path: 'products/:productId', component: DetailsComponent }
+      { path: 'categories/:categoryId', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent }
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ListComponent,
-    DetailsComponent,
+    ProductListComponent,
+    ProductDetailsComponent,
     CategoryComponent
   ],
   bootstrap: [
