@@ -1,7 +1,6 @@
-<div class="photo-container">
-    <div *ngFor="let photo of albumPhotos" class="photo-details">
-        <p>Photo number: {{photo.id}}</p>
-        <p>Title: {{photo.title}}</p>
+<div class="photos">
+    <div *ngFor="let photo of albumPhotos" class="dtls">
         <img src="{{photo.url}}">
+        <p>{{photo.title}}</p>
     </div>
 </div>

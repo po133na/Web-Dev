@@ -20,16 +20,16 @@ export class AlbumsComponent implements OnInit {
     this.getAlbums();
   }
 
-  getAlbums(): void {
-    this.albumsService.getAlbums().subscribe((albums) => {
-      this.albums = albums;
-    });
-  }
-
   addAlbum(): void {
     this.albumsService.addAlbum(this.newAlbum).subscribe((album) => {
       this.albums.unshift(album);
       this.newAlbum = new Album();
+    });
+  }
+
+  getAlbums(): void {
+    this.albumsService.getAlbums().subscribe((albums) => {
+      this.albums = albums;
     });
   }
 

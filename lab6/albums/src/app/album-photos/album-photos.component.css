@@ -1,20 +1,20 @@
-.photo-container {
+.photos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(5, 273px);
     grid-gap: 20px; 
   }
   
-  .photo-details {
-    border: 1px solid #ccc;
+  .dtls{
+    margin: 30px;
     padding: 10px;
   }
-  
-  .photo-details p {
-    margin: 0;
-  }
-  
-  .photo-details img {
+
+  .dtls img {
     max-width: 100%; 
     height: auto;
+  }
+  
+  .dtls p {
+    margin: 0;
   }
   
