@@ -2,11 +2,11 @@ from django.db import models
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=250)
-    price = models.FloatField()
-    description = models.TextField()
+    name = models.CharField(max_length=100)
+    price = models.FloatField(max_length=20)
+    description = models.TextField(max_length=100)
     count = models.IntegerField()
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return f"id: {self.id}, title: {self.name}"
