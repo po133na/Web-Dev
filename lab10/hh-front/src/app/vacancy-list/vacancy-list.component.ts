@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Vacancy } from '../models/vacancy';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-vacancy-list',
-  standalone: true,
-  imports: [],
   templateUrl: './vacancy-list.component.html',
-  styleUrl: './vacancy-list.component.css'
+  styleUrls: ['./vacancy-list.component.scss']
 })
-export class VacancyListComponent {
+export class VacancyListComponent implements OnInit {
+  vacancies:Vacancy[] = [];
+  selectedVanacy : Vacancy | null = null;
+  constructor(private apiService: ApiService){}
+  ngOnInit(): void {
+    this.apiService.getVacancies().subscribe( vacancies =>{this.vacancies = vacancies;})
+  }
 
 }

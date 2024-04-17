@@ -7,13 +7,14 @@
 
 
 from django.urls import path
+from api.views import  VacancyList, VacancyDetail
 from . import views
 
 urlpatterns = [
     path("companies/", views.companies_list),
     path("companies/<int:id>/", views.company_detail),
     path("companies/<int:id>/vacancies/", views.company_vacancies),
-    path("vacancies/", views.vacancies_list),
-    path("vacancies/<int:id>/", views.vacancy_detail),
+    path("vacancies/", VacancyList.as_view()),
+    path("vacancies/<int:id>/", VacancyDetail.as_view()),
     path("vacancies/top_ten/", views.sort_vacancy),
 ]
